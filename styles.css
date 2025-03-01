@@ -32,6 +32,8 @@ h1 {
 }
 
 h2 {
+    font-family: "Space Grotesk", serif;
+    color: var(--light-purple) !important;
     text-align: center;
 }
 
