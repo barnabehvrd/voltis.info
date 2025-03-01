@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Title</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="src/assets/scripts/scripts.js" defer></script>
+</head>
+<body>
+
+<!-- Hero (presentation) -->
+<div class="container col-xxl-8 px-4 py-5" id="hero">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <lottie-player src="src/assets/lottie/landingPerson.json" background="transparent"
+                           class="mx-lg-none img-fluid d-none d-lg-block" speed="1" style="width: 700px; height: 500px;"
+                           loop autoplay alt="Animated image of someone typing on his laptop"></lottie-player>
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Bonjour, je suis Barnabé </h1>
+            <p class="lead">Un jeune étuidant en informatique de <span id="age">?</span> ans et passioné</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="#tech-skills" type="button" class="btn btn-primary purple btn-lg px-4 me-md-2">À propos de moi</a>
+                <a href="#contact" type="button" class="btn btn-outline-secondary btn-lg px-4">Me contacter</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tech Skills -->
+<div id="tech-skills" class="container py-5">
+    <h2 class="text-center mb-4">Compétences Techniques</h2>
+
+    <ul class="nav nav-tabs justify-content-center" id="techTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="languages-tab" data-bs-toggle="tab" data-bs-target="#languages-content"
+                    type="button" role="tab" aria-controls="languages-content" aria-selected="true">Langages
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="dbms-tab" data-bs-toggle="tab" data-bs-target="#dbms-content" type="button"
+                    role="tab" aria-controls="dbms-content" aria-selected="false">SGBD & ORM
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="software-tab" data-bs-toggle="tab" data-bs-target="#software-content"
+                    type="button" role="tab" aria-controls="software-content" aria-selected="false">Outils
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="framework-tab" data-bs-toggle="tab" data-bs-target="#framework-content"
+                    type="button" role="tab" aria-controls="framework-content" aria-selected="false">Frameworks
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="misc-tab" data-bs-toggle="tab" data-bs-target="#misc-content" type="button"
+                    role="tab" aria-controls="misc-content" aria-selected="false">Divers
+            </button>
+        </li>
+    </ul>
+
+    <div class="tab-content py-4" id="techTabsContent">
+        <div class="tab-pane fade show active" id="languages-content" role="tabpanel" aria-labelledby="languages-tab">
+            <div class="container" id="knowledges">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./src/assets/vectors/javascript.svg" class="card-img-top" alt="JavaScript Logo">
+                            <div class="card-body">
+                                <h5 class="card-title">JavaScript</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./src/assets/vectors/typescript.svg" class="card-img-top" alt="TypeScript Logo">
+                            <div class="card-body">
+                                <h5 class="card-title">TypeScript</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./src/assets/vectors/java.svg" class="card-img-top" alt="Java Logo">
+                            <div class="card-body">
+                                <h5 class="card-title">Java</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./src/assets/vectors/kotlin.svg" class="card-img-top" alt="Kotlin Logo">
+                            <div class="card-body">
+                                <h5 class="card-title">Kotlin</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./src/assets/vectors/bash.svg" class="card-img-top" alt="Bash Logo">
+                            <div class="card-body">
+                                <h5 class="card-title">Bash</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./src/assets/vectors/php.svg" class="card-img-top" alt="PHP Logo">
+                            <div class="card-body">
+                                <h5 class="card-title">PHP</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./src/assets/vectors/html.svg" class="card-img-top" alt="html Logo">
+                            <div class="card-body">
+                                <h5 class="card-title">HTML</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./src/assets/vectors/css.svg" class="card-img-top" alt="CSS Logo">
+                            <div class="card-body">
+                                <h5 class="card-title">CSS</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./src/assets/vectors/python.svg" class="card-img-top" alt="Python Logo">
+                            <div class="card-body">
+                                <h5 class="card-title">Python</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./src/assets/vectors/clang.svg" class="card-img-top" alt="C Logo">
+                            <div class="card-body">
+                                <h5 class="card-title">C</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="dbms-content" role="tabpanel" aria-labelledby="dbms-tab">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/mysql.svg" class="card-img-top" alt="MySQL Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">MySQL</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/mariadb.svg" class="card-img-top" alt="MariaDB Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">MariaDB</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/sqlite.svg" class="card-img-top" alt="MariaDB Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">SQLite</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/sqlserv.svg" class="card-img-top" alt="SQLServer Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">SQLServer</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/mongodb.svg" class="card-img-top" alt="SQLServer Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">MongoDB</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/redis.svg" class="card-img-top" alt="SQLServer Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Redis</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/neo4j.svg" class="card-img-top" alt="SQLServer Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Neo4j</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/prisma.svg" class="card-img-top" alt="SQLServer Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Prisma</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/doctrine.svg" class="card-img-top" alt="SQLServer Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Doctrine</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="software-content" role="tabpanel" aria-labelledby="software-tab">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/intellij.svg" class="card-img-top" alt="IntelliJ Idea Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">IntelliJ Idea</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/android-studio.svg" class="card-img-top"
+                             alt="Android Studio Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Android Studio</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/vscode.svg" class="card-img-top" alt="VSCode Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">VSCode</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/figma.svg" class="card-img-top" alt="Figma Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Figma</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/insomnia.svg" class="card-img-top" alt="Insomnia Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Insomnia</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/termius.svg" class="card-img-top" alt="Termius Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Termius</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/trello.svg" class="card-img-top" alt="Trello Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Trello</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="framework-content" role="tabpanel" aria-labelledby="framework-tab">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/fastapi.svg" class="card-img-top" alt="FastAPI Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">FastAPI</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/express.svg" class="card-img-top" alt="Express Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Express</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/bootstrap.svg" class="card-img-top" alt="Bootsrap Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootsrap</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/symfony.svg" class="card-img-top" alt="Symfony Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Symfony</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/ionic.svg" class="card-img-top" alt="Ionic Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Ionic</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="misc-content" role="tabpanel" aria-labelledby="misc-tab">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/github.svg" class="card-img-top" alt="Github Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Github</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/copilot.svg" class="card-img-top" alt="Github Copilot Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Github Copilot</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/docker.svg" class="card-img-top" alt="Docker Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Docker</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/portainer.svg" class="card-img-top" alt="Portainer Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Portainer</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/nginx.svg" class="card-img-top" alt="Nginx Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Nginx</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/cloudflare.svg" class="card-img-top" alt="Nginx Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Cloudflare</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/certbot.svg" class="card-img-top" alt="Certbot Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Certbot</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./src/assets/vectors/ubuntu.svg" class="card-img-top" alt="Ubuntu Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Ubuntu</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="experience" class="container py-5">
+    <h2 class="text-center mb-4">Formation & Expérience</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="mb-3 text-center">Formation</h3>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">BUT Informatique</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">IUT de Laval - Université du Mans</h6>
+                    <p class="card-text">Apprentissage des bases de l'informatique, de l'ergonomie, du développement de
+                        logiciels, du développement web, du développement Android, de la RV et de la 3D</p>
+                    <p class="card-text"><small class="text-muted">2023 - 2026</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h3 class="mb-3 text-center">Expérience</h3>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Stage & Alternance en développement</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Netexpo</h6>
+                    <p class="card-text">Maintenance d'applications, pour de l'événementiel, utilisées dans des salons
+                        et conférences</p>
+                    <p class="card-text"><small class="text-muted">Avril 2025 - Aujourd'hui</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Me contacter</h2>
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card bg-dark p-5">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h3 class="mb-4 text-center text-md-start">Une question ?</h3>
+                        <ul class="contact-info">
+                            <li class="d-flex align-items-center mb-4">
+                                <div class="d-flex align-items-center mb-4">
+                                    <i class="bi bi-envelope-fill me-3 fs-3 text-purple"></i>
+                                    <a href="mailto:hello@voltis.cloud" class="fs-5 contact-link">hello@voltis.cloud</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center mb-4">
+                                <i class="bi bi-telephone-fill me-3 fs-3 text-purple"></i>
+                                <a href="tel:+33620066378" class="fs-5 contact-link">(+33) 6 20 06 63 78</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h3 class="mb-4 text-center text-md-start">Retrouvez-moi sur</h3>
+                        <ul class="contact-info">
+                            <li class="d-flex align-items-center mb-4">
+                                <i class="bi bi-github me-3 fs-3 text-purple"></i>
+                                <a href="https://github.com/barnabehvrd" class="fs-5 contact-link">GitHub</a>
+                            </li>
+                            <li class="d-flex align-items-center mb-4">
+                                <i class="bi bi-linkedin me-3 fs-3 text-purple"></i>
+                                <a href="https://www.linkedin.com/in/barnab%C3%A9-havard/" class="fs-5 contact-link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 d-flex justify-content-center">
+                        <a href="/src/assets/files/CV%20Barnabe%20HAVARD.pdf" download class="btn purple px-4 py-3" style="width: auto; min-width: 200px;">
+                            <i class="bi bi-file-earmark-text me-2"></i>Télécharger mon CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-center justify-content-sm-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary justify-content-center justify-content-sm-end justify-content-center">
+            © <span id="currYear">?</span> voltis.info</p>
+
+        <ul class="nav col-md-4 justify-content-center justify-content-sm-end ">
+            <li class="nav-item"><a href="#hero" class="nav-link px-2 text-body-secondary">Accueil</a></li>
+            <li class="nav-item"><a href="#tech-skills" class="nav-link px-2 text-body-secondary">Compétences</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link px-2 text-body-secondary">Experience</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link px-2 text-body-secondary">Contact</a></li>
+
+        </ul>
+    </footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>

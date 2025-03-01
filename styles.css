@@ -1,0 +1,142 @@
+:root {
+    /* Purples */
+    --deep-purple: #6A0DAD;
+    --bright-purple: #8A4FFF;
+    --king-purple: #5D3FD3;
+    --dark-lavender: #9467BD;
+
+    /* Blacks */
+    --back-coal : #121212;
+    --black-anthracite: #1E1E1E;
+    --dark-gray: #2C2C2C;
+    --slate-grey: #353535;
+
+    /* Accents */
+    --light-lavanda: #cfb8ee;
+    --thistle: #D8BFD8;
+    --light-purple: #F0E6FF;
+
+    /* Text */
+    --text-light: #E0E0E0;
+    --text-white: #FFFFFF;
+}
+
+body {
+    background-color: var(--black-anthracite);
+    color: var(--text-light)
+}
+
+h1 {
+    font-family: "Space Grotesk", serif;
+    color: aliceblue;
+}
+
+h2 {
+    text-align: center;
+}
+
+#knowledges .card-img-top {
+    width: 100px;
+}
+
+#knowledges .card {
+    text-align: center;
+    align-items: center;
+}
+
+
+/* Style pour les onglets */
+#techTabs .nav-link {
+    color: var(--light-lavanda);
+    border: none;
+    font-family: "Space Grotesk", serif;
+    font-weight: 500;
+
+}
+
+#techTabs .nav-link.active {
+    background-color: var(--dark-gray);
+    color: var(--text-white);
+    border-bottom: 3px solid var(--bright-purple);
+}
+
+#techTabs .nav-link:hover:not(.active) {
+    border-bottom: 3px solid var(--king-purple);
+}
+
+/* Style uniforme pour toutes les cartes technologiques */
+.tab-content .card {
+    background-color: var(--dark-gray);
+    border: none;
+    text-align: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.tab-content .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tab-content .card-img-top {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.purple {
+    background-color: var(--bright-purple) !important;
+    border-color: var(--bright-purple) !important;
+}
+
+.purple:hover {
+    background-color: var(--deep-purple) !important;
+    border-color: var(--deep-purple) !important;
+}
+
+#experience .card {
+    transition: transform 0.3s ease;
+}
+
+#experience .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Contact section styles */
+#contact .card {
+    border: none;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contact .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-link {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 8px 0;
+}
+
+.contact-link:hover {
+    color: var(--light-lavanda);
+    transform: translateX(5px);
+}
+
+.contact-link .text-purple {
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover .text-purple {
+    color: var(--light-lavanda);
+}
+
+#cv {
+    text-align: center;
+}
