@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="fr" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <title>Barnabe HAVARD</title>
+    <meta name="description" content="Barnabé HAVARD, étudiant en informatique, passionné par le développement web">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
     </style>
+    <!-- Bootsrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <!-- Lottie Player -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="src/assets/scripts/scripts.js" defer></script>
@@ -29,8 +31,8 @@
             <h1 class="display-5 fw-bold lh-1 mb-3">Bonjour, je suis Barnabé </h1>
             <p class="lead">Un jeune étudiant en informatique de <span id="age">?</span> ans et passionné</p>
             <div class="d-grid gap-2 d-lg-flex justify-content-lg-start">
-                <a href="#tech-skills" type="button" class="btn btn-primary purple btn-lg px-4 me-lg-2">À propos de moi</a>
-                <a href="#contact" type="button" class="btn btn-outline-secondary btn-lg px-4">Me contacter</a>
+                <a href="#tech-skills" class="btn btn-primary purple btn-lg px-4 me-lg-2">À propos de moi</a>
+                <a href="#contact" class="btn btn-outline-secondary btn-lg px-4">Me contacter</a>
             </div>
         </div>
     </div>
@@ -70,8 +72,7 @@
 
     <div class="tab-content py-4" id="techTabsContent">
         <div class="tab-pane fade show active" id="languages-content" role="tabpanel" aria-labelledby="languages-tab">
-            <div class="container" id="knowledges">
-                <div class="row row-cols-1 row-cols-lg-4 g-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     <div class="col">
                         <div class="card">
                             <img src="./src/assets/vectors/javascript.svg" class="card-img-top" alt="JavaScript Logo">
@@ -153,11 +154,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
 
         <div class="tab-pane fade" id="dbms-content" role="tabpanel" aria-labelledby="dbms-tab">
-            <div class="row row-cols-1 row-cols-lg-4 g-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                 <div class="col">
                     <div class="card">
                         <img src="./src/assets/vectors/mysql.svg" class="card-img-top" alt="MySQL Logo">
@@ -234,7 +234,7 @@
         </div>
 
         <div class="tab-pane fade" id="software-content" role="tabpanel" aria-labelledby="software-tab">
-            <div class="row row-cols-1 row-cols-lg-4 g-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                 <div class="col">
                     <div class="card">
                         <img src="./src/assets/vectors/intellij.svg" class="card-img-top" alt="IntelliJ Idea Logo">
@@ -296,7 +296,7 @@
         </div>
 
         <div class="tab-pane fade" id="framework-content" role="tabpanel" aria-labelledby="framework-tab">
-            <div class="row row-cols-1 row-cols-lg-4 g-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                 <div class="col">
                     <div class="card">
                         <img src="./src/assets/vectors/fastapi.svg" class="card-img-top" alt="FastAPI Logo">
@@ -341,7 +341,7 @@
         </div>
 
         <div class="tab-pane fade" id="misc-content" role="tabpanel" aria-labelledby="misc-tab">
-            <div class="row row-cols-1 row-cols-lg-4 g-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                 <div class="col">
                     <div class="card">
                         <img src="./src/assets/vectors/github.svg" class="card-img-top" alt="Github Logo">
@@ -504,9 +504,5 @@
     </footer>
 </div>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 </body>
 </html>
