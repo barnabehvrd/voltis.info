@@ -142,3 +142,48 @@ h2 {
 #cv {
     text-align: center;
 }
+
+
+
+/* Modification des vagues pour qu'elles s'adaptent mieux aux mobiles */
+.waves-background {
+    z-index: -1;
+    pointer-events: none;
+}
+
+.waves-background svg {
+    width: 100%;
+    height: 25vh; /* Hauteur par défaut pour mobile */
+}
+
+/* Augmenter progressivement la hauteur pour les écrans plus grands */
+@media (min-width: 576px) {
+    .waves-background svg {
+        height: 30vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .waves-background svg {
+        height: 35vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .waves-background svg {
+        height: 40vh;
+    }
+}
+
+/* Optionnel : utiliser un SVG simplifié pour mobile */
+@media (max-width: 575px) {
+    .waves-background svg path {
+        /* Des chemins plus simples pour mobile */
+        d: "M0,160 L1440,256 L1440,320 L0,320 Z";
+    }
+}
+.particles-background {
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.2;
+}
